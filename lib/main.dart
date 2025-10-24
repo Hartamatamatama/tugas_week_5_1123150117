@@ -27,7 +27,7 @@ class Halaman extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple,
-        // surfaceTintColor: Colors.blue,
+        surfaceTintColor: Colors.blue,
         title: const Text('Halaman Depan'),
         shadowColor: Colors.black,
         actions: [
