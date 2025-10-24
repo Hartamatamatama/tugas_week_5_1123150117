@@ -24,8 +24,29 @@ class Halaman extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home Page')),
-      body: const Center(child: Text('Welcome to the Home Page!')),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        surfaceTintColor: Colors.blue,
+        title: const Text('Halaman Depan'),
+        shadowColor: Colors.black,
+        actions: [
+          IconButton(
+            onPressed: () {
+              // Aksi ketika ikon pencarian ditekan
+              print('Pencarian ditekan');
+            },
+            icon: const Icon(Icons.search),
+          ),
+          IconButton(
+            onPressed: () {
+              // Aksi ketika ikon lebih banyak ditekan
+              print('Lebih banyak ditekan');
+            },
+            icon: const Icon(Icons.more_vert),
+          ),
+        ],
+      ),
+      body: const Center(child: Text('Welcome to the Halaman Depan!')),
     );
   }
 }

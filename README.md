@@ -23,3 +23,14 @@ Todo
 7. Saya ingin hilang debug?
  Caranya? ketik debug pilih debugShowCheckedBanner
  isi dengan : false
+
+8. Buat title
+9. Buat halaman dari apps dengan nama halaman
+
+10. buat stateless dengan ketik stl \ .
+    ganti nama dengan "Halaman"
+
+11. buat scaffold a
+
+12. buat AppBar dan berikan background color
+
