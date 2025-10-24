@@ -1,5 +1,6 @@
 //Todo
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,8 +26,8 @@ class Halaman extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        surfaceTintColor: Colors.blue,
+        backgroundColor: Colors.deepPurple,
+        // surfaceTintColor: Colors.blue,
         title: const Text('Halaman Depan'),
         shadowColor: Colors.black,
         actions: [
@@ -47,9 +48,21 @@ class Halaman extends StatelessWidget {
         ],
       ),
       body: Container(
-        color: Colors.lightBlueAccent,
+        // color: Colors.lightBlueAccent,
         alignment: Alignment.center,
-        child: Text("text"),
+        // width: 200,
+        // height: 200,
+        // child: Row(children: [Text("text")]),
+        margin: EdgeInsets.lerp(EdgeInsets.all(20), EdgeInsets.all(40), 0.5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.lightBlueAccent,
+          gradient: LinearGradient(
+            colors: [Colors.deepPurple, Colors.black],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+          ),
+        ),
       ),
     );
   }
