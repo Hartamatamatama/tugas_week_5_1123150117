@@ -46,7 +46,11 @@ class Halaman extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(child: Text('Welcome to the Halaman Depan!')),
+      body: Container(
+        color: Colors.lightBlueAccent,
+        alignment: Alignment.center,
+        child: Text("text"),
+      ),
     );
   }
 }
