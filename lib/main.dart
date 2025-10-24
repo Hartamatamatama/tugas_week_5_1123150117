@@ -10,12 +10,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
+    return MaterialApp(
+      title: 'Latihan Container',
+      debugShowCheckedModeBanner: false,
+      home: Halaman(),
+    );
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class Halaman extends StatelessWidget {
+  const Halaman({super.key});
 
   @override
   Widget build(BuildContext context) {
