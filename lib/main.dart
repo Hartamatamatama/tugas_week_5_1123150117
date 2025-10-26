@@ -29,7 +29,7 @@ class Halaman extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
         surfaceTintColor: Colors.blue,
         title: const Text('Halaman Depan'),
-        shadowColor: Colors.black,
+        shadowColor: Colors.blue,
         actions: [
           IconButton(
             onPressed: () {
@@ -53,7 +53,7 @@ class Halaman extends StatelessWidget {
         // width: 200,
         // height: 200,
         // child: Row(children: [Text("text")]),
-        margin: EdgeInsets.lerp(EdgeInsets.all(20), EdgeInsets.all(40), 0.5),
+        margin: EdgeInsets.all(50),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           color: Colors.lightBlueAccent,
@@ -62,6 +62,14 @@ class Halaman extends StatelessWidget {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
           ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(5, 5), // changes position of shadow
+            ),
+          ],
         ),
       ),
     );
