@@ -70,6 +70,7 @@ class Halaman extends StatelessWidget {
               offset: Offset(5, 5), // changes position of shadow
             ),
           ],
+          shape: BoxShape.circle,
         ),
       ),
     );
