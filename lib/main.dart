@@ -55,7 +55,6 @@ class Halaman extends StatelessWidget {
         // child: Row(children: [Text("text")]),
         margin: EdgeInsets.all(50),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
           color: Colors.lightBlueAccent,
           gradient: LinearGradient(
             colors: [Colors.deepPurple, Colors.black],
