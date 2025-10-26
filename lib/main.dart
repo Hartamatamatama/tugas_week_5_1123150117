@@ -54,6 +54,14 @@ class Halaman extends StatelessWidget {
         // height: 200,
         // child: Row(children: [Text("text")]),
         margin: EdgeInsets.all(50),
+        child: Text(
+          'Halo Semua',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         decoration: BoxDecoration(
           color: Colors.lightBlueAccent,
           gradient: LinearGradient(
