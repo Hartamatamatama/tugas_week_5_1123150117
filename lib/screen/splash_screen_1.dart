@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen_1123150117/main.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -28,6 +29,11 @@ class SplashScreen1 extends StatelessWidget {
             Text(
               'Welcome',
               style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Yamaha Semakin di Depan',
+              style: TextStyle(fontSize: 20, color: Colors.grey[700]),
             ),
           ],
         ),
