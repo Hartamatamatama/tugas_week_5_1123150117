@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:splash_screen_1123150117/main.dart';
 
@@ -44,7 +46,7 @@ class SplashScreen1 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.green,
+                    color: Colors.deepPurple,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -66,6 +68,31 @@ class SplashScreen1 extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            SizedBox(height: 50),
+            Container(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple,
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 50.0,
+                    vertical: 15.0,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                ),
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
+                ),
+              ),
             ),
           ],
         ),
