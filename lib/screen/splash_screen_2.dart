@@ -2,9 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:splash_screen_1123150117/main.dart';
+import 'package:splash_screen_1123150117/screen/splash_screen_3.dart';
 
-class SplashScreen1 extends StatelessWidget {
-  const SplashScreen1({super.key});
+class SplashScreen2 extends StatelessWidget {
+  const SplashScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +14,7 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(),
             SizedBox(height: 50),
             Container(
               width: 250,
@@ -22,7 +24,7 @@ class SplashScreen1 extends StatelessWidget {
                 color: Colors.deepPurple,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/image1.png'),
+                  image: AssetImage('assets/images/image2.png'),
                 ),
               ),
             ),
@@ -46,7 +48,7 @@ class SplashScreen1 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.deepPurple,
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -55,7 +57,7 @@ class SplashScreen1 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.grey,
+                    color: Colors.deepPurple,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -79,7 +81,7 @@ class SplashScreen1 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => MyApp()),
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -99,6 +101,7 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 70),
           ],
         ),
       ),
