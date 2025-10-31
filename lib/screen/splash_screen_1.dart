@@ -16,7 +16,7 @@ class SplashScreen1 extends StatelessWidget {
               height: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.amber,
+                color: Colors.deepPurple,
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage('assets/images/image1.png'),
@@ -24,6 +24,11 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
             //tambahkan disini untuk widget widget lainnya nanti
+            SizedBox(height: 30),
+            Text(
+              'Welcome',
+              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
