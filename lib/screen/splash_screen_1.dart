@@ -35,6 +35,38 @@ class SplashScreen1 extends StatelessWidget {
               'Yamaha Semakin di Depan',
               style: TextStyle(fontSize: 20, color: Colors.grey[700]),
             ),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.green,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.grey,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
